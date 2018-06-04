@@ -9,7 +9,7 @@
         "doctrine/lexer": "^1.0",
         "doctrine/annotations": "^1.6",
         "doctrine/coding-standard": "^4.0",
-        "php": ">=7.2.2",
+        "php": "^7.2.2",
         "doctrine/dbal": "^2.7",
         "phpunit/phpunit-mock-objects": "^6.1",
         "psr/log": "^1.0"
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "models\\": "web/app/src/models/",
+            "models\\": "web/app/src/",
             "App\\Acme\\": "src/"
         }
     },

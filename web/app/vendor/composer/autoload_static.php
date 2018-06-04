@@ -98,7 +98,7 @@ class ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b
         ),
         'models\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/web/app/src/models',
+            0 => __DIR__ . '/../..' . '/web/app/src',
         ),
         'Zend\\EventManager\\' => 
         array (
