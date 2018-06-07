@@ -8,8 +8,8 @@
 
 namespace models;
 
-abstract Class Parser{
-
+abstract Class Parser
+{
     protected $htmLINK;
     protected $htmlTITLE;
     protected $htmlDESCRIPTION;
@@ -46,5 +46,4 @@ abstract Class Parser{
     abstract public function getTime();
     abstract public function setArticle($article);
     abstract public function getArticle();
-
 }

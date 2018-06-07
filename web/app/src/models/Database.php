@@ -8,61 +8,38 @@
 
 namespace models;
 
-Class Database
+class DB
 {
-    private $config;
+    public $config;
+    public $connectionParams;
+    public $conn;
+    private $tableName = "";
 
-    public function getConfig()
+
+    public function __construct()
     {
-        return $this->config = new \Doctrine\DBAL\Configuration();
-    }
-
-    private $connParams = array(
-        'dbname' => 'parser',
-        'user' => 'root',
-        'password' => 'testc',
-//        'host' => '127.0.0.1',
-        'host' => 'localhost',
-        'port' => 8001,
-        'driver' => 'pdo_mysql',
-        'charset' => 'utf8'
-    );
-
-    public function getConnParams()
-    {
-        return $this->connParams;
-    }
-
-    private $conn;
-
-    public function getConn()
-    {
-//        try{
-            $this->conn = \Doctrine\DBAL\DriverManager::getConnection($this->getConnParams(), $this->getConfig());
-            return $this->conn;
-//        }
-//        catch(\Doctrine\DBAL\DBALException $exception)
-//        {
-//            $this->getConn()->rollback();
-//        }
-
-    }
-    public function createTable($sql){
         try {
-            $this->getConn()->query($sql);
-        }
-        catch(\Doctrine\DBAL\DBALException $exception){
-            $exception->getMessage();
+            $this->config = new \Doctrine\DBAL\Configuration();
+            $this->connectionParams = array(
+                'dbname' => 'parser',
+                'user' => 'root',
+                'password' => 'root',
+                'host' => 'mysql',
+                'port' => '3306',
+                'driver' => 'pdo_mysql',
+                'charset' => 'utf8'
+            );
+            $this->conn = \Doctrine\DBAL\DriverManager::getConnection($this->connectionParams, $this->config);
+        } catch (\Doctrine\DBAL\DBALException $e) {
+            $e->getMessage();
         }
     }
-    public function doSelect($sql){
-        try {
-            $this->getConn()->query($sql);
-//            return
-        }
-        catch(\Doctrine\DBAL\DBALException $exception){
-            $exception->getMessage();
-        }
+    public function setTableName($tableName){
+        $this->tableName = $tableName;
+
+    }
+    public function getTableName(){
+        return $this->tableName;
     }
 }
 
