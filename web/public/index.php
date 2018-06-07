@@ -5,14 +5,15 @@ require_once '../app/vendor/simple-html-dom/simple-html-dom/simple_html_dom.php'
 
 //абстрактный класс с набором методов и свойств, подзываемых с каждым новым объектом класса.
 //handler, который получает абстрактный класс с методами и свойствами (от неизвестного объекта класса
+
 use Doctrine\DBAL\Query;
 
 class DB
 {
-    private $config;
-    private $connectionParams;
-    private $conn;
-    private $tableName = "pages";
+    public $config;
+    public $connectionParams;
+    public $conn;
+    private $tableName = "";
 
 
     public function __construct()
@@ -35,28 +36,68 @@ class DB
     }
     public function setTableName($tableName){
         $this->tableName = $tableName;
+
+    }
+    public function getTableName(){
+    return $this->tableName;
 }
-//        $stmt = $conn->createQueryBuilder();
-//        $result = $stmt->select('url')
-//            ->from('articles')
-//            //        ->insert('articles')
-//            //        ->setValue('url', '?')
-//            //        ->setValue('title', '?')
-//            //        ->setValue('description', '?')
-//            //        ->setValue('timeCreated', '?')
-//            //        ->setValue('viewsAmount', '?')
-//            //        ->setParameter(0, 'https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/configuration.html#configuration')
-//            //        ->setParameter(1, 'title')
-//            //        ->setParameter(2, 'description')
-//            //        ->setParameter(3, '21-40')
-//            //        ->setParameter(4, '3');
-//            //    echo $stmt->getSQL();
-//            ->execute()->fetchAll();
-//
-//    }
+}
+class Article extends DB{
+
+
+    public $stmt;
+    private $select = "";
+    private $insert = "";
+
+    public function setSelect($select){
+        $this->select = $select;
+    }
+    public function getSelect(){
+        return $this->select;
+    }
+    public function setInsert($insert){
+        $this->insert = $insert;
+    }
+    public function getInsert(){
+        return $this->insert;
+    }
+    private $where = "";
+    public function setWhere($where){
+        $this->where = $where;
+    }
+    public function getWhere(){
+        return $this->where;
+    }
+    private $limit = "";
+    public function setLimit($limit){
+        $this->limit = $limit;
+    }
+    public function getLimit(){
+        return $this->limit;
+    }
+
+    private $values = array();
+    public function setValues($values){
+        $this->values = $values;
+    }
+    public function getValues(){
+        return $this->values;
+    }
+
+    public function __construct()
+    {
+        parent::__construct();
+//        $this->tableName = $tableName;
+//        $this->where = $where;
+//        $this->select = $select;
+//        $this->limit = $limit;
+    }
+
 }
 
-new DB();
+$db = new DB();
+$db->setTableName("articles");
+$article = new Article();
 
 abstract Class Parser{
 
@@ -201,80 +242,8 @@ Class Post extends Parser {
         return $this->article;
     }
 }
-Class Database
+Class PostRepository extends Article
 {
-    private $config;
-
-    public function getConfig()
-    {
-        return $this->config = new \Doctrine\DBAL\Configuration();
-    }
-
-    private $connParams = array(
-        'dbname' => 'parser',
-        'user' => 'root',
-        'password' => 'testc',
-//        'host' => '127.0.0.1',
-        'host' => 'localhost',
-        'port' => 8001,
-        'driver' => 'pdo_mysql',
-        'charset' => 'utf8'
-    );
-
-    public function getConnParams()
-    {
-        return $this->connParams;
-    }
-
-    private $conn;
-
-    public function getConn()
-    {
-//        try{
-        $this->conn = \Doctrine\DBAL\DriverManager::getConnection($this->getConnParams(), $this->getConfig());
-        return $this->conn;
-//        }
-//        catch(\Doctrine\DBAL\DBALException $exception)
-//        {
-//            $this->getConn()->rollback();
-//        }
-
-    }
-    public function createTable($sql){
-        try {
-            $this->getConn()->query($sql);
-        }
-        catch(\Doctrine\DBAL\DBALException $exception){
-            $exception->getMessage();
-        }
-    }
-    public function doSelect($sql){
-        try {
-            $this->getConn()->query($sql);
-//            return
-        }
-        catch(\Doctrine\DBAL\DBALException $exception){
-            $exception->getMessage();
-        }
-    }
-}
-Class PostRepository{
-//    private $url;
-//    private $SHD;
-//
-//    public function __construct($SHD, $url, $findItem)
-//    {
-//        function setSHD($SHD){
-//            $this->SHD = $SHD;
-//    }
-//        function setUrl($url){
-//            $this->SHD->load_file($url);
-//        }
-//        function setItem($findItem){
-//            $this->SHD->find($findItem);
-//        }
-//
-//    }
     private $articles;
     public function setArticles($articles){
         $this->articles = $articles;
@@ -299,9 +268,31 @@ Class PostRepository{
             $post->setTime($article->find($htmlVIEWS, 0)->innertext);
             $post->setViews($article->find($htmlTIME, 0)->innertext);
             $this->posts[] = $post;
-
         }
         return $this->getPosts();
+
+    }
+
+    public function setQueryInsert($tableName)
+    {
+        foreach($this->getPosts() as $queryItem) {
+            $stmt = $this->conn->createQueryBuilder();
+            $result = $stmt->insert($tableName)
+                ->setValue('url', '?')->setParameter(0, $this->posts[0])
+                ->setValue('title', '?')->setParameter(1, $this->posts[1])
+                ->setValue('description', '?')->setParameter(2, $this->posts[2])
+                ->setValue('timeCreated', '?')->setParameter(3, $this->posts[3])
+                ->setValue('viewsAmount', '?')->setParameter(4, $this->posts[4])
+                ->execute()->fetchAll();
+            return $result;
+        }
+    }
+
+    public function setQuerySelect($tableName, $select, $where)
+    {
+        $stmt = $this->conn->createQueryBuilder();
+        $result = $stmt->select($select)->from($tableName)->where($where)->execute()->fetchAll();
+        return $result;
     }
 }
 
@@ -333,18 +324,39 @@ $timer->setPosts(
 echo "<pre>";
 var_dump($timer->getPosts());
 echo "</pre>";
+$segodnya->setQueryInsert('segodnyaArticles');
+$segodnya->setQueryInsert('segodnyaArticles');
+$segodnya->setQuerySelect('timerArticles', "*", "id>10");
+$segodnya->setQuerySelect('timerArticles', "*", "id>10");
 
 
-//$database = new Database();
-//$database->getConn();
-//$database->doSelect("INSERT INTO posts (id, url) VALUES (3, 'https://getcomposer.org/doc/03-cli.md#clear-cache-clearcache-')");
 
 
-///$database->createTable("CREATE TABLE `example` (
-//        id INT(6) AUTO_INCREMENT PRIMARY KEY,
-//        url VARCHAR (255) NOT NULL UNIQUE,/
-//          title VARCHAR (255) NOT NULL,
-////        description TEXT,
-////        timeCreated TIMESTAMP,
-////        viewsAmount INT (12)
-//  )");
+//function pdoMultiInsert($articles, $conn)
+//{
+//    $articles;
+//    global $conn;
+//    $rowsSQL = array();
+//    $toBind = array();
+//    $columnNames = array_keys($articles[0]);
+//    foreach ($articles as $arrayIndex => $row) {
+//        $params = array();
+//        foreach ($row as $columnName => $columnValue) {
+//            $param = ":" . $columnName . $arrayIndex;
+//            $params[] = $param;
+//            $toBind[$param] = $columnValue;
+//        }
+//        $rowsSQL[] = "(" . implode(", ", $params) . ")";
+//    }
+//
+//    /**
+//     * DUPLICATE - если поле `url` выдает ошибку, что эти данные уже есть в таблице, мы даем команду UPDATE (обновить их)
+//     */
+//    $sql = "INSERT INTO `articles` (" . implode(", ", $columnNames) . ") VALUES " . implode(", ", $rowsSQL) . " ON DUPLICATE KEY UPDATE `url` = VALUES(`url`) ";
+////    die(var_dump($sql));
+//    $pdoStatement = $conn->prepare($sql);
+//    foreach ($toBind as $param => $val) {
+//        $pdoStatement->bindValue($param, $val);
+//    }
+//    return $pdoStatement->execute();
+//}
