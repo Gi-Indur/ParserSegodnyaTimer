@@ -20,6 +20,7 @@ services:
     php:
         image: nanoninja/php-fpm:${PHP_VERSION}
         restart: always
+        container_name: nanoninja_php-fpm
         volumes:
             - "./etc/php/php.ini:/usr/local/etc/php/conf.d/php.ini"
             - "./web:/var/www/html"

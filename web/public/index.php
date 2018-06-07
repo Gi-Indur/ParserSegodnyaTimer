@@ -1,8 +1,6 @@
 <?php
 require_once '../app/vendor/autoload.php';
 require_once '../app/vendor/simple-html-dom/simple-html-dom/simple_html_dom.php';
-//абстрактный класс с набором методов и свойств, подзываемых с каждым новым объектом класса.
-//handler, который получает абстрактный класс с методами и свойствами (от неизвестного объекта класса
 
 use models\PostRepository;
 use models\DB;
@@ -42,7 +40,7 @@ use models\Article;
 //        return $this->tableName;
 //    }
 //}
-
+//
 //class Article extends DB{
 //
 //
@@ -97,7 +95,7 @@ use models\Article;
 //}
 
 $db = new DB();
-$db->setTableName("articles");
+//$db->setTableName("timerArticles");
 $article = new Article();
 
 //abstract Class Parser{
@@ -139,7 +137,7 @@ $article = new Article();
 //    abstract public function setArticle($article);
 //    abstract public function getArticle();
 //}
-
+//
 //Class Post extends Parser {
 //
 //    protected $htmLINK;
@@ -176,10 +174,12 @@ $article = new Article();
 //    public function getHtmlTITLE(){
 //        return $this->htmlTITLE;
 //    }
+//
 //    public function setHtmlDESCRIPTION($htmlDESCRIPTION)
 //    {
 //        $this->htmlDESCRIPTION = $htmlDESCRIPTION;
 //    }
+//
 //    public function getHtmlDESCRIPTION()
 //    {
 //        return $this->htmlDESCRIPTION;
@@ -243,7 +243,7 @@ $article = new Article();
 //        return $this->article;
 //    }
 //}
-
+//
 //Class PostRepository extends Article
 //{
 //    private $articles;
@@ -277,18 +277,23 @@ $article = new Article();
 //
 //    public function setQueryInsert($tableName)
 //    {
-//        foreach($this->getPosts() as $queryItem) {
 //            $stmt = $this->conn->createQueryBuilder();
-//            $result = $stmt->insert($tableName)
-//                ->setValue('url', '?')->setParameter(0, $this->posts[0])
-//                ->setValue('title', '?')->setParameter(1, $this->posts[1])
-//                ->setValue('description', '?')->setParameter(2, $this->posts[2])
-//                ->setValue('timeCreated', '?')->setParameter(3, $this->posts[3])
-//                ->setValue('viewsAmount', '?')->setParameter(4, $this->posts[4])
-//                ->execute()->fetchAll();
-//            return $result;
+//            $result = $stmt
+//                ->insert($tableName)
+//                ->setValue('url', '?')
+//                ->setValue('title', '?')
+//                ->setValue('description', '?')
+//                ->setValue('timeCreated', '?')
+//                ->setValue('viewsAmount', '?')
+//                ->setParameter(0, $this->getPosts([0]))
+//                ->setParameter(1, $this->getPosts([1]))
+//                ->setParameter(2, $this->getPosts([2]))
+//                ->setParameter(3, $this->getPosts([3]))
+//                ->setParameter(4, $this->getPosts([4]))
+//                ->getMaxResults();
+//        var_dump($result);
+//        return $result;
 //        }
-//    }
 //
 //    public function setQuerySelect($tableName, $select, $where)
 //    {
@@ -309,9 +314,9 @@ $segodnya->setPosts(
     'div.overflow-wrap a div.description div.date-views-wrap span.views acronym'
 );
 $segodnya->getPosts();
-echo "<pre>";
-var_dump($segodnya->getPosts());
-echo "</pre>";
+//echo "<pre>";
+//var_dump($segodnya->getPosts());
+//echo "</pre>";
 
 $timer = new PostRepository();
 $timer->setPosts(
@@ -323,11 +328,10 @@ $timer->setPosts(
     'span.comments',
     'time.small'
 );
-echo "<pre>";
-var_dump($timer->getPosts());
-echo "</pre>";
+//echo "<pre>";
+//var_dump($timer->getPosts());
+//echo "</pre>";
+
 $segodnya->setQueryInsert('segodnyaArticles');
-$segodnya->setQueryInsert('segodnyaArticles');
-$segodnya->setQuerySelect('timerArticles', "*", "id>10");
-$segodnya->setQuerySelect('timerArticles', "*", "id>10");
+$segodnya->setQueryInsert('timerArticles');
 

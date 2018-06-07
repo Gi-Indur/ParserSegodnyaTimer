@@ -18,9 +18,9 @@ class ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
-        'm' => 
+        'a' => 
         array (
-            'models\\' => 7,
+            'app\\src\\' => 8,
         ),
         'Z' => 
         array (
@@ -96,9 +96,9 @@ class ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
-        'models\\' => 
+        'app\\src\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/web/app/src',
+            0 => __DIR__ . '/../..' . '/models',
         ),
         'Zend\\EventManager\\' => 
         array (
