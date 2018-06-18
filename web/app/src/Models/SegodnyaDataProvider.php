@@ -77,7 +77,6 @@ class SegodnyaDataProvider extends AbstractParseProvider implements DataProvider
                     ];
                 $postTime = str_replace($matches[0] , date('Y',  time()).'-'.$month[$matches[2]].'-'.$matches[1].' ', $postTime);
             }
-            // todo проверка $postTime на соответствие формата даты 1999-12-31 11:59(:59| или ничего)
             $post
                 ->setLink           ($searcher->find("div.overflow-wrap a", 0)->href)
                 ->setTitle          ($searcher->find("div.overflow-wrap a div.description h3", 0)->innertext)

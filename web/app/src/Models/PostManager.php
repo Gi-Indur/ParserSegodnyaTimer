@@ -61,10 +61,3 @@ class PostManager extends DB
     }
 }
 
-//function selectArticles(){
-//    global $pdo;
-//    $sth = $pdo->prepare("SELECT * FROM `articles` ORDER BY `timeCreated` DESC LIMIT 5");
-//    $sth->execute();
-//    $result = $sth->fetchAll(PDO::FETCH_ASSOC);
-//    return $result;
-//}
