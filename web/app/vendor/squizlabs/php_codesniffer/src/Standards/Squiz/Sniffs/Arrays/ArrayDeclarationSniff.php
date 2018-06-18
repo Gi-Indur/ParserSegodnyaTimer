@@ -660,6 +660,8 @@ class ArrayDeclarationSniff implements Sniff
         $numValues = count($indices);
 
         $indicesStart  = ($keywordStart + 1);
+        $arrowStart    = ($indicesStart + $maxLength + 1);
+        $valueStart    = ($arrowStart + 3);
         $indexLine     = $tokens[$stackPtr]['line'];
         $lastIndexLine = null;
         foreach ($indices as $index) {
@@ -720,9 +722,10 @@ class ArrayDeclarationSniff implements Sniff
                         $phpcsFile->fixer->replaceToken(($index['index'] - 1), str_repeat(' ', $expected));
                     }
                 }
+
+                continue;
             }
 
-            $arrowStart = ($tokens[$index['index']]['column'] + $maxLength + 1);
             if ($tokens[$index['arrow']]['column'] !== $arrowStart) {
                 $expected = ($arrowStart - (strlen($index['index_content']) + $tokens[$index['index']]['column']));
                 $found    = ($tokens[$index['arrow']]['column'] - (strlen($index['index_content']) + $tokens[$index['index']]['column']));
@@ -744,7 +747,6 @@ class ArrayDeclarationSniff implements Sniff
                 continue;
             }
 
-            $valueStart = ($arrowStart + 3);
             if ($tokens[$index['value']]['column'] !== $valueStart) {
                 $expected = ($valueStart - ($tokens[$index['arrow']]['length'] + $tokens[$index['arrow']]['column']));
                 $found    = ($tokens[$index['value']]['column'] - ($tokens[$index['arrow']]['length'] + $tokens[$index['arrow']]['column']));
@@ -834,7 +836,7 @@ class ArrayDeclarationSniff implements Sniff
 
                 if ($fix === true) {
                     // Find the end of the line and put a comma there.
-                    for ($i = ($index['value'] + 1); $i <= $arrayEnd; $i++) {
+                    for ($i = ($index['value'] + 1); $i < $arrayEnd; $i++) {
                         if ($tokens[$i]['line'] > $valueLine) {
                             break;
                         }

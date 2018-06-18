@@ -292,20 +292,6 @@ class InlineCommentSniff implements Sniff
                 return;
             }
 
-            $errorCode = 'SpacingAfter';
-
-            if (isset($tokens[$stackPtr]['conditions']) === true) {
-                $conditions   = $tokens[$stackPtr]['conditions'];
-                $type         = end($conditions);
-                $conditionPtr = key($conditions);
-
-                if (($type === T_FUNCTION || $type === T_CLOSURE)
-                    && $tokens[$conditionPtr]['scope_closer'] === $next
-                ) {
-                    $errorCode = 'SpacingAfterAtFunctionEnd';
-                }
-            }
-
             for ($i = ($stackPtr + 1); $i < $phpcsFile->numTokens; $i++) {
                 if ($tokens[$i]['line'] === ($tokens[$stackPtr]['line'] + 1)) {
                     if ($tokens[$i]['code'] !== T_WHITESPACE) {
@@ -317,7 +303,7 @@ class InlineCommentSniff implements Sniff
             }
 
             $error = 'There must be no blank line following an inline comment';
-            $fix   = $phpcsFile->addFixableError($error, $stackPtr, $errorCode);
+            $fix   = $phpcsFile->addFixableError($error, $stackPtr, 'SpacingAfter');
             if ($fix === true) {
                 $phpcsFile->fixer->beginChangeset();
                 for ($i = ($stackPtr + 1); $i < $next; $i++) {

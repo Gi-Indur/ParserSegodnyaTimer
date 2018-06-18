@@ -27,13 +27,9 @@ services:
     composer:
         image: "composer"
         volumes:
-            - "./web/app:/app"
+            - "/home/catafrakt/Documents/Parser/web/app:/app"
         command: install
-#    composer:
-#        image: composer/composer
-#        volumes:
-#            - "./web/app:/app"
-#        command: install
+        container_name: myComposer
     myadmin:
         image: phpmyadmin/phpmyadmin
         container_name: phpmyadmin

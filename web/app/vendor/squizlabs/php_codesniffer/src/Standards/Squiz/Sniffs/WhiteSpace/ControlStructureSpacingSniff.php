@@ -292,7 +292,8 @@ class ControlStructureSpacingSniff implements Sniff
             }
 
             if ($tokens[$owner]['code'] === T_CLOSURE
-                && ($phpcsFile->hasCondition($stackPtr, [T_FUNCTION, T_CLOSURE]) === true
+                && ($phpcsFile->hasCondition($stackPtr, T_FUNCTION) === true
+                || $phpcsFile->hasCondition($stackPtr, T_CLOSURE) === true
                 || isset($tokens[$stackPtr]['nested_parenthesis']) === true)
             ) {
                 return;

@@ -160,8 +160,6 @@ abstract class Tokenizer
         }
 
         $checkAnnotations = $this->config->annotations;
-        $encoding         = $this->config->encoding;
-        $tabWidth         = $this->config->tabWidth;
 
         $this->tokensWithTabs = [
             T_WHITESPACE               => true,
@@ -185,7 +183,7 @@ abstract class Tokenizer
                 // There are no tabs in the tokens we know the length of.
                 $length      = $this->knownLengths[$this->tokens[$i]['code']];
                 $currColumn += $length;
-            } else if ($tabWidth === 0
+            } else if ($this->config->tabWidth === 0
                 || isset($this->tokensWithTabs[$this->tokens[$i]['code']]) === false
                 || strpos($this->tokens[$i]['content'], "\t") === false
             ) {
@@ -194,7 +192,7 @@ abstract class Tokenizer
                     // Not using the default encoding, so take a bit more care.
                     $oldLevel = error_reporting();
                     error_reporting(0);
-                    $length = iconv_strlen($this->tokens[$i]['content'], $encoding);
+                    $length = iconv_strlen($this->tokens[$i]['content'], $this->config->encoding);
                     error_reporting($oldLevel);
 
                     if ($length === false) {
@@ -224,10 +222,11 @@ abstract class Tokenizer
                 $this->tokens[$i]['length'] -= $eolLen;
             }
 
-            if ($this->tokens[$i]['code'] === T_COMMENT
+            if ($checkAnnotations === true
+                && ($this->tokens[$i]['code'] === T_COMMENT
                 || $this->tokens[$i]['code'] === T_DOC_COMMENT_STRING
                 || $this->tokens[$i]['code'] === T_DOC_COMMENT_TAG
-                || ($inTests === true && $this->tokens[$i]['code'] === T_INLINE_HTML)
+                || ($inTests === true && $this->tokens[$i]['code'] === T_INLINE_HTML))
             ) {
                 $commentText      = ltrim($this->tokens[$i]['content'], " \t/*");
                 $commentText      = rtrim($commentText, " */\t\r\n");
@@ -254,7 +253,7 @@ abstract class Tokenizer
                     if ($ignoring === null
                         && strpos($commentText, '@codingStandardsIgnoreStart') !== false
                     ) {
-                        $ignoring = ['.all' => true];
+                        $ignoring = ['all' => true];
                         if ($ownLine === true) {
                             $this->ignoredLines[$this->tokens[$i]['line']] = $ignoring;
                         }
@@ -262,7 +261,7 @@ abstract class Tokenizer
                         && strpos($commentText, '@codingStandardsIgnoreEnd') !== false
                     ) {
                         if ($ownLine === true) {
-                            $this->ignoredLines[$this->tokens[$i]['line']] = ['.all' => true];
+                            $this->ignoredLines[$this->tokens[$i]['line']] = ['all' => true];
                         } else {
                             $this->ignoredLines[$this->tokens[$i]['line']] = $ignoring;
                         }
@@ -271,7 +270,7 @@ abstract class Tokenizer
                     } else if ($ignoring === null
                         && strpos($commentText, '@codingStandardsIgnoreLine') !== false
                     ) {
-                        $ignoring = ['.all' => true];
+                        $ignoring = ['all' => true];
                         if ($ownLine === true) {
                             $this->ignoredLines[$this->tokens[$i]['line']]       = $ignoring;
                             $this->ignoredLines[($this->tokens[$i]['line'] + 1)] = $ignoring;
@@ -301,72 +300,29 @@ abstract class Tokenizer
                     // If this comment is the only thing on the line, it tells us
                     // to ignore the following line. If the line contains other content
                     // then we are just ignoring this one single line.
-                    $lineHasOtherContent = false;
-                    $lineHasOtherTokens  = false;
+                    $ownLine = false;
                     if ($i > 0) {
                         for ($prev = ($i - 1); $prev > 0; $prev--) {
-                            if ($this->tokens[$prev]['line'] !== $this->tokens[$i]['line']) {
-                                // Changed lines.
-                                break;
-                            }
-
                             if ($this->tokens[$prev]['code'] === T_WHITESPACE
+                                || $this->tokens[$prev]['code'] === T_OPEN_TAG
                                 || ($this->tokens[$prev]['code'] === T_INLINE_HTML
                                 && trim($this->tokens[$prev]['content']) === '')
                             ) {
                                 continue;
                             }
 
-                            $lineHasOtherTokens = true;
-
-                            if ($this->tokens[$prev]['code'] === T_OPEN_TAG) {
-                                continue;
-                            }
-
-                            $lineHasOtherContent = true;
                             break;
-                        }//end for
+                        }
 
-                        $changedLines = false;
-                        for ($next = $i; $next < $this->numTokens; $next++) {
-                            if ($changedLines === true) {
-                                // Changed lines.
-                                break;
-                            }
-
-                            if (isset($this->knownLengths[$this->tokens[$next]['code']]) === false
-                                && strpos($this->tokens[$next]['content'], $this->eolChar) !== false
-                            ) {
-                                // Last token on the current line.
-                                $changedLines = true;
-                            }
-
-                            if ($next === $i) {
-                                continue;
-                            }
-
-                            if ($this->tokens[$next]['code'] === T_WHITESPACE
-                                || ($this->tokens[$next]['code'] === T_INLINE_HTML
-                                && trim($this->tokens[$next]['content']) === '')
-                            ) {
-                                continue;
-                            }
-
-                            $lineHasOtherTokens = true;
-
-                            if ($this->tokens[$next]['code'] === T_CLOSE_TAG) {
-                                continue;
-                            }
-
-                            $lineHasOtherContent = true;
-                            break;
-                        }//end for
-                    }//end if
+                        if ($this->tokens[$prev]['line'] !== $this->tokens[$i]['line']) {
+                            $ownLine = true;
+                        }
+                    }
 
                     if (substr($commentTextLower, 0, 9) === 'phpcs:set') {
                         // Ignore standards for complete lines that change sniff settings.
-                        if ($lineHasOtherTokens === false) {
-                            $this->ignoredLines[$this->tokens[$i]['line']] = ['.all' => true];
+                        if ($ownLine === true) {
+                            $this->ignoredLines[$this->tokens[$i]['line']] = true;
                         }
 
                         $this->tokens[$i]['code'] = T_PHPCS_SET;
@@ -376,9 +332,9 @@ abstract class Tokenizer
                         $this->tokens[$i]['code'] = T_PHPCS_IGNORE_FILE;
                         $this->tokens[$i]['type'] = 'T_PHPCS_IGNORE_FILE';
                     } else if (substr($commentTextLower, 0, 13) === 'phpcs:disable') {
-                        if ($lineHasOtherContent === false) {
+                        if ($ownLine === true) {
                             // Completely ignore the comment line.
-                            $this->ignoredLines[$this->tokens[$i]['line']] = ['.all' => true];
+                            $this->ignoredLines[$this->tokens[$i]['line']] = ['all' => true];
                         }
 
                         if ($ignoring === null) {
@@ -389,31 +345,15 @@ abstract class Tokenizer
 
                         $additionalText = substr($commentText, 14);
                         if ($additionalText === false) {
-                            $ignoring = ['.all' => true];
+                            $ignoring = ['all' => true];
                         } else {
                             $parts = explode(',', substr($commentText, 13));
                             foreach ($parts as $sniffCode) {
                                 $sniffCode = trim($sniffCode);
                                 $disabledSniffs[$sniffCode] = true;
                                 $ignoring[$sniffCode]       = true;
-
-                                // This newly disabled sniff might be disabling an existing
-                                // enabled exception that we are tracking.
-                                if (isset($ignoring['.except']) === true) {
-                                    foreach (array_keys($ignoring['.except']) as $ignoredSniffCode) {
-                                        if ($ignoredSniffCode === $sniffCode
-                                            || strpos($ignoredSniffCode, $sniffCode.'.') === 0
-                                        ) {
-                                            unset($ignoring['.except'][$ignoredSniffCode]);
-                                        }
-                                    }
-
-                                    if (empty($ignoring['.except']) === true) {
-                                        unset($ignoring['.except']);
-                                    }
-                                }
-                            }//end foreach
-                        }//end if
+                            }
+                        }
 
                         $this->tokens[$i]['code']       = T_PHPCS_DISABLE;
                         $this->tokens[$i]['type']       = 'T_PHPCS_DISABLE';
@@ -430,45 +370,19 @@ abstract class Tokenizer
                                 foreach ($parts as $sniffCode) {
                                     $sniffCode = trim($sniffCode);
                                     $enabledSniffs[$sniffCode] = true;
-
-                                    // This new enabled sniff might remove previously disabled
-                                    // sniffs if it is actually a standard or category of sniffs.
-                                    foreach (array_keys($ignoring) as $ignoredSniffCode) {
-                                        if ($ignoredSniffCode === $sniffCode
-                                            || strpos($ignoredSniffCode, $sniffCode.'.') === 0
-                                        ) {
-                                            unset($ignoring[$ignoredSniffCode]);
-                                        }
+                                    if (isset($ignoring[$sniffCode]) === true) {
+                                        unset($ignoring[$sniffCode]);
                                     }
-
-                                    // This new enabled sniff might be able to clear up
-                                    // previously enabled sniffs if it is actually a standard or
-                                    // category of sniffs.
-                                    if (isset($ignoring['.except']) === true) {
-                                        foreach (array_keys($ignoring['.except']) as $ignoredSniffCode) {
-                                            if ($ignoredSniffCode === $sniffCode
-                                                || strpos($ignoredSniffCode, $sniffCode.'.') === 0
-                                            ) {
-                                                unset($ignoring['.except'][$ignoredSniffCode]);
-                                            }
-                                        }
-                                    }
-                                }//end foreach
+                                }
 
                                 if (empty($ignoring) === true) {
                                     $ignoring = null;
-                                } else {
-                                    if (isset($ignoring['.except']) === true) {
-                                        $ignoring['.except'] += $enabledSniffs;
-                                    } else {
-                                        $ignoring['.except'] = $enabledSniffs;
-                                    }
                                 }
-                            }//end if
+                            }
 
-                            if ($lineHasOtherContent === false) {
+                            if ($ownLine === true) {
                                 // Completely ignore the comment line.
-                                $this->ignoredLines[$this->tokens[$i]['line']] = ['.all' => true];
+                                $this->ignoredLines[$this->tokens[$i]['line']] = ['all' => true];
                             } else {
                                 // The comment is on the same line as the code it is ignoring,
                                 // so respect the new ignore rules.
@@ -485,7 +399,7 @@ abstract class Tokenizer
 
                         $additionalText = substr($commentText, 13);
                         if ($additionalText === false) {
-                            $ignoreRules = ['.all' => true];
+                            $ignoreRules = ['all' => true];
                         } else {
                             $parts = explode(',', substr($commentText, 13));
                             foreach ($parts as $sniffCode) {
@@ -501,10 +415,10 @@ abstract class Tokenizer
                             $ignoreRules += $ignoring;
                         }
 
-                        if ($lineHasOtherContent === false) {
+                        if ($ownLine === true) {
                             // Completely ignore the comment line, and set the folllowing
                             // line to include the ignore rules we've set.
-                            $this->ignoredLines[$this->tokens[$i]['line']]       = ['.all' => true];
+                            $this->ignoredLines[$this->tokens[$i]['line']]       = ['all' => true];
                             $this->ignoredLines[($this->tokens[$i]['line'] + 1)] = $ignoreRules;
                         } else {
                             // The comment is on the same line as the code it is ignoring,
@@ -519,12 +433,6 @@ abstract class Tokenizer
                 $this->ignoredLines[$this->tokens[$i]['line']] = $ignoring;
             }
         }//end for
-
-        // If annotations are being ignored, we clear out all the ignore rules
-        // but leave the annotations tokenized as normal.
-        if ($checkAnnotations === false) {
-            $this->ignoredLines = [];
-        }
 
     }//end createPositionMap()
 
@@ -559,7 +467,7 @@ abstract class Tokenizer
             }
         }
 
-        if (rtrim($token['content'], "\t") === '') {
+        if (str_replace("\t", '', $token['content']) === '') {
             // String only contains tabs, so we can shortcut the process.
             $numTabs = strlen($token['content']);
 
@@ -1209,7 +1117,6 @@ abstract class Tokenizer
                                 // a new statement, it isn't a scope opener.
                                 $disallowed  = Util\Tokens::$assignmentTokens;
                                 $disallowed += [
-                                    T_DOLLAR           => true,
                                     T_VARIABLE         => true,
                                     T_OBJECT_OPERATOR  => true,
                                     T_COMMA            => true,

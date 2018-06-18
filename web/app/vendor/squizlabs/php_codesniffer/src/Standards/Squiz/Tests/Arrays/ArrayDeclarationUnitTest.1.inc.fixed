@@ -1,8 +1,4 @@
 <?php
-array(
- $a,
- array($b),
-) = $array;
 
 function test()
 {
@@ -12,6 +8,7 @@ function test()
 
     $c = array('a' => 1);
 }
+
 
 class TestClass
 {
@@ -376,13 +373,4 @@ $a = array
 $a = array /* comment */ (
       'a',
       'b', 
-     );
-
-$x = array('a' => false);
-
-$x = array(
-      'xxxx' => array(
-                 'aaaaaaaaaa' => 'ccccccccccc',
-                 'bbbbbbbb'   => false,
-                ),
      );

@@ -27,16 +27,23 @@ class MemberVarScopeSniff extends AbstractVariableSniff
      */
     protected function processMemberVar(File $phpcsFile, $stackPtr)
     {
-        $tokens     = $phpcsFile->getTokens();
-        $properties = $phpcsFile->getMemberProperties($stackPtr);
+        $tokens = $phpcsFile->getTokens();
 
-        if ($properties['scope_specified'] !== false) {
-            return;
+        $modifier = null;
+        for ($i = ($stackPtr - 1); $i > 0; $i--) {
+            if ($tokens[$i]['line'] < $tokens[$stackPtr]['line']) {
+                break;
+            } else if (isset(Tokens::$scopeModifiers[$tokens[$i]['code']]) === true) {
+                $modifier = $i;
+                break;
+            }
         }
 
-        $error = 'Scope modifier not specified for member variable "%s"';
-        $data  = [$tokens[$stackPtr]['content']];
-        $phpcsFile->addError($error, $stackPtr, 'Missing', $data);
+        if ($modifier === null) {
+            $error = 'Scope modifier not specified for member variable "%s"';
+            $data  = [$tokens[$stackPtr]['content']];
+            $phpcsFile->addError($error, $stackPtr, 'Missing', $data);
+        }
 
     }//end processMemberVar()
 

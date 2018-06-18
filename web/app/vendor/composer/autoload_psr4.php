@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
-    'app\\src\\' => array($baseDir . '/models'),
     'Zend\\EventManager\\' => array($vendorDir . '/zendframework/zend-eventmanager/src'),
     'Zend\\Code\\' => array($vendorDir . '/zendframework/zend-code/src'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
@@ -40,7 +39,6 @@ return array(
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => array($vendorDir . '/dealerdirect/phpcodesniffer-composer-installer/src'),
-    'App\\Acme\\' => array($baseDir . '/src'),
     'AppTest\\Acme\\' => array($baseDir . '/test'),
     'ApiGen\\StringRouting\\' => array($vendorDir . '/apigen/apigen/packages/StringRouting/src'),
     'ApiGen\\Reflection\\' => array($vendorDir . '/apigen/apigen/packages/Reflection/src'),
@@ -49,4 +47,5 @@ return array(
     'ApiGen\\BetterReflection\\' => array($vendorDir . '/apigen/apigen/packages/BetterReflection/src'),
     'ApiGen\\Annotation\\' => array($vendorDir . '/apigen/apigen/packages/Annotation/src'),
     'ApiGen\\' => array($vendorDir . '/apigen/apigen/src'),
+    '' => array($baseDir . '/src'),
 );

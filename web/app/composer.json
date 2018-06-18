@@ -23,8 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "app\\src\\": "models/",
-            "App\\Acme\\": "src/"
+            "": "src/"
         }
     },
     "autoload-dev": {

@@ -12,6 +12,7 @@ namespace PHP_CodeSniffer\Util;
 use PHP_CodeSniffer\Autoload;
 use PHP_CodeSniffer\Config;
 use PHP_CodeSniffer\Ruleset;
+use PHP_CodeSniffer\Util\Common;
 
 class Cache
 {
@@ -151,26 +152,16 @@ class Cache
             'encoding'     => $config->encoding,
             'recordErrors' => $config->recordErrors,
             'annotations'  => $config->annotations,
-            'configData'   => Config::getAllConfigData(),
             'codeHash'     => $codeHash,
             'rulesetHash'  => $rulesetHash,
         ];
 
-        $configString = var_export($configData, true);
+        $configString = implode(',', $configData);
         $cacheHash    = substr(sha1($configString), 0, 12);
 
         if (PHP_CODESNIFFER_VERBOSITY > 1) {
             echo "\tGenerating cache key data".PHP_EOL;
             foreach ($configData as $key => $value) {
-                if (is_array($value) === true) {
-                    echo "\t\t=> $key:".PHP_EOL;
-                    foreach ($value as $subKey => $subValue) {
-                        echo "\t\t\t=> $subKey: $subValue".PHP_EOL;
-                    }
-
-                    continue;
-                }
-
                 if ($value === true || $value === false) {
                     $value = (int) $value;
                 }
@@ -179,7 +170,7 @@ class Cache
             }
 
             echo "\t\t=> cacheHash: $cacheHash".PHP_EOL;
-        }//end if
+        }
 
         if ($config->cacheFile !== null) {
             $cacheFile = $config->cacheFile;

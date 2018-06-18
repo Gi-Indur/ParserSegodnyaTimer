@@ -43,6 +43,8 @@ class ClassCommentSniff extends FileCommentSniff
      */
     public function process(File $phpcsFile, $stackPtr)
     {
+        $this->currentFile = $phpcsFile;
+
         $tokens    = $phpcsFile->getTokens();
         $type      = strtolower($tokens[$stackPtr]['content']);
         $errorData = [$type];

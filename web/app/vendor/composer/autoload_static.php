@@ -18,10 +18,6 @@ class ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
-        'a' => 
-        array (
-            'app\\src\\' => 8,
-        ),
         'Z' => 
         array (
             'Zend\\EventManager\\' => 18,
@@ -77,7 +73,6 @@ class ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b
         ),
         'A' => 
         array (
-            'App\\Acme\\' => 9,
             'AppTest\\Acme\\' => 13,
             'ApiGen\\StringRouting\\' => 21,
             'ApiGen\\Reflection\\' => 18,
@@ -95,10 +90,6 @@ class ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-        ),
-        'app\\src\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/models',
         ),
         'Zend\\EventManager\\' => 
         array (
@@ -228,10 +219,6 @@ class ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b
         array (
             0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
         ),
-        'App\\Acme\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'AppTest\\Acme\\' => 
         array (
             0 => __DIR__ . '/../..' . '/test',
@@ -264,6 +251,10 @@ class ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b
         array (
             0 => __DIR__ . '/..' . '/apigen/apigen/src',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -973,6 +964,7 @@ class ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitb9dc823e0fbaa9194603e94ed0ed2a4b::$classMap;
 

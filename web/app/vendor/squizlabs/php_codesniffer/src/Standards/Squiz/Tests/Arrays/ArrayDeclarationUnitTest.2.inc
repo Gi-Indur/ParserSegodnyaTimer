@@ -1,5 +1,4 @@
 <?php
-[$a, [$b]] = $array;
 
 function test()
 {
@@ -11,6 +10,7 @@ function test()
             'a' => 1,
          ];
 }
+
 
 class TestClass
 {
@@ -340,11 +340,3 @@ EOD
 echo [1][0];
 echo 'PHP'[0];
 echo [1][0, 1, 2]; // not valid code, but should not be picked up here
-
-$x = [
-    'a' => false];
-
-$x = [
-    'xxxx'   => ['aaaaaaaaaa' => 'ccccccccccc',
-                 'bbbbbbbb'   => false],
-];

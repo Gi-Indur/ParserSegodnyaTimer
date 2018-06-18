@@ -294,9 +294,21 @@ class HeaderBag implements \IteratorAggregate, \Countable
 
     protected function getCacheControlHeader()
     {
+        $parts = array();
         ksort($this->cacheControl);
+        foreach ($this->cacheControl as $key => $value) {
+            if (true === $value) {
+                $parts[] = $key;
+            } else {
+                if (preg_match('#[^a-zA-Z0-9._-]#', $value)) {
+                    $value = '"'.$value.'"';
+                }
 
-        return HeaderUtils::toString($this->cacheControl, ',');
+                $parts[] = "$key=$value";
+            }
+        }
+
+        return implode(', ', $parts);
     }
 
     /**
@@ -308,8 +320,12 @@ class HeaderBag implements \IteratorAggregate, \Countable
      */
     protected function parseCacheControl($header)
     {
-        $parts = HeaderUtils::split($header, ',=');
+        $cacheControl = array();
+        preg_match_all('#([a-zA-Z][a-zA-Z_-]*)\s*(?:=(?:"([^"]*)"|([^ \t",;]*)))?#', $header, $matches, PREG_SET_ORDER);
+        foreach ($matches as $match) {
+            $cacheControl[strtolower($match[1])] = isset($match[3]) ? $match[3] : (isset($match[2]) ? $match[2] : true);
+        }
 
-        return HeaderUtils::combine($parts);
+        return $cacheControl;
     }
 }

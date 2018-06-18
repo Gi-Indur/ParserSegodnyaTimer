@@ -30,16 +30,15 @@ class ArrayDeclarationUnitTest extends AbstractSniffUnitTest
         switch ($testFile) {
         case 'ArrayDeclarationUnitTest.1.inc':
             return [
-                2   => 1,
-                8   => 2,
-                10  => 2,
+                7   => 2,
+                9   => 2,
                 22  => 1,
-                23  => 2,
-                24  => 2,
+                23  => 1,
+                24  => 1,
                 25  => 1,
-                31  => 2,
+                31  => 1,
                 35  => 1,
-                36  => 2,
+                36  => 1,
                 41  => 1,
                 46  => 1,
                 47  => 1,
@@ -84,7 +83,7 @@ class ArrayDeclarationUnitTest extends AbstractSniffUnitTest
                 182 => 1,
                 188 => 1,
                 207 => 1,
-                212 => 2,
+                212 => 1,
                 214 => 1,
                 218 => 2,
                 219 => 2,
@@ -98,20 +97,15 @@ class ArrayDeclarationUnitTest extends AbstractSniffUnitTest
                 339 => 2,
                 348 => 2,
                 352 => 2,
-                355 => 3,
-                358 => 3,
-                359 => 2,
-                360 => 1,
             ];
         case 'ArrayDeclarationUnitTest.2.inc':
             return [
-                2   => 1,
-                10  => 1,
-                23  => 2,
-                24  => 2,
+                9   => 1,
+                23  => 1,
+                24  => 1,
                 25  => 1,
-                31  => 2,
-                36  => 2,
+                31  => 1,
+                36  => 1,
                 41  => 1,
                 46  => 1,
                 47  => 1,
@@ -164,10 +158,6 @@ class ArrayDeclarationUnitTest extends AbstractSniffUnitTest
                 303 => 1,
                 309 => 1,
                 331 => 2,
-                345 => 3,
-                348 => 3,
-                349 => 2,
-                350 => 1,
             ];
         default:
             return [];

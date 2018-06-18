@@ -803,17 +803,17 @@
     },
     {
         "name": "latte/latte",
-        "version": "v2.4.8",
-        "version_normalized": "2.4.8.0",
+        "version": "v2.4.7",
+        "version_normalized": "2.4.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/nette/latte.git",
-            "reference": "95ca6bab6caaa3efa3b5d7d4537f9a45cb89ed90"
+            "reference": "f989b018ec12f9492132515cd47f83f98429c513"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nette/latte/zipball/95ca6bab6caaa3efa3b5d7d4537f9a45cb89ed90",
-            "reference": "95ca6bab6caaa3efa3b5d7d4537f9a45cb89ed90",
+            "url": "https://api.github.com/repos/nette/latte/zipball/f989b018ec12f9492132515cd47f83f98429c513",
+            "reference": "f989b018ec12f9492132515cd47f83f98429c513",
             "shasum": ""
         },
         "require": {
@@ -833,7 +833,7 @@
             "ext-mbstring": "to use filters like lower, upper, capitalize, ...",
             "nette/utils": "to use filter |webalize"
         },
-        "time": "2018-06-03T17:34:15+00:00",
+        "time": "2018-02-06T14:42:33+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -877,31 +877,28 @@
     },
     {
         "name": "myclabs/deep-copy",
-        "version": "1.8.0",
-        "version_normalized": "1.8.0.0",
+        "version": "1.7.0",
+        "version_normalized": "1.7.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/myclabs/DeepCopy.git",
-            "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6"
+            "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/478465659fd987669df0bd8a9bf22a8710e5f1b6",
-            "reference": "478465659fd987669df0bd8a9bf22a8710e5f1b6",
+            "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
+            "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
             "shasum": ""
         },
         "require": {
-            "php": "^7.1"
-        },
-        "replace": {
-            "myclabs/deep-copy": "self.version"
+            "php": "^5.6 || ^7.0"
         },
         "require-dev": {
             "doctrine/collections": "^1.0",
             "doctrine/common": "^2.6",
-            "phpunit/phpunit": "^7.1"
+            "phpunit/phpunit": "^4.1"
         },
-        "time": "2018-05-29T17:25:09+00:00",
+        "time": "2017-10-19T19:58:43+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1338,17 +1335,17 @@
     },
     {
         "name": "nikic/php-parser",
-        "version": "v4.0.2",
-        "version_normalized": "4.0.2.0",
+        "version": "v4.0.1",
+        "version_normalized": "4.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/nikic/PHP-Parser.git",
-            "reference": "35b8caf75e791ba1b2d24fec1552168d72692b12"
+            "reference": "e4a54fa90a5cd8e8dd3fb4099942681731c5cdd3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/35b8caf75e791ba1b2d24fec1552168d72692b12",
-            "reference": "35b8caf75e791ba1b2d24fec1552168d72692b12",
+            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e4a54fa90a5cd8e8dd3fb4099942681731c5cdd3",
+            "reference": "e4a54fa90a5cd8e8dd3fb4099942681731c5cdd3",
             "shasum": ""
         },
         "require": {
@@ -1358,7 +1355,7 @@
         "require-dev": {
             "phpunit/phpunit": "^6.5 || ^7.0"
         },
-        "time": "2018-06-03T11:33:10+00:00",
+        "time": "2018-03-25T17:35:16+00:00",
         "bin": [
             "bin/php-parse"
         ],
@@ -2328,6 +2325,75 @@
         ]
     },
     {
+        "name": "roave/better-reflection",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Roave/BetterReflection.git",
+            "reference": "5a5570d84cdc021318cabe6a599d38cb199da7e7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Roave/BetterReflection/zipball/5a5570d84cdc021318cabe6a599d38cb199da7e7",
+            "reference": "5a5570d84cdc021318cabe6a599d38cb199da7e7",
+            "shasum": ""
+        },
+        "require": {
+            "nikic/php-parser": "^4.0.0",
+            "php": ">=7.1.0,<7.3.0",
+            "phpdocumentor/reflection-docblock": "^4.1.1",
+            "phpdocumentor/type-resolver": "^0.4.0",
+            "roave/signature": "^1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^7.0.0"
+        },
+        "suggest": {
+            "composer/composer": "Required to use the ComposerSourceLocator"
+        },
+        "time": "2018-05-26T12:32:26+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Roave\\BetterReflection\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "James Titcumb",
+                "email": "james@asgrim.com",
+                "homepage": "https://github.com/asgrim"
+            },
+            {
+                "name": "Gary Hockin",
+                "email": "gary@roave.com",
+                "homepage": "https://github.com/geeh"
+            },
+            {
+                "name": "Jaroslav Hanslík",
+                "email": "kukulich@kukulich.cz",
+                "homepage": "https://github.com/kukulich"
+            },
+            {
+                "name": "Marco Pivetta",
+                "email": "ocramius@gmail.com",
+                "homepage": "https://ocramius.github.io/"
+            }
+        ],
+        "description": "Better Reflection - an improved code reflection API"
+    },
+    {
         "name": "roave/signature",
         "version": "1.0.0",
         "version_normalized": "1.0.0.0",
@@ -3020,17 +3086,17 @@
     },
     {
         "name": "squizlabs/php_codesniffer",
-        "version": "3.3.0",
-        "version_normalized": "3.3.0.0",
+        "version": "3.2.3",
+        "version_normalized": "3.2.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-            "reference": "d86873af43b4aa9d1f39a3601cc0cfcf02b25266"
+            "reference": "4842476c434e375f9d3182ff7b89059583aa8b27"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d86873af43b4aa9d1f39a3601cc0cfcf02b25266",
-            "reference": "d86873af43b4aa9d1f39a3601cc0cfcf02b25266",
+            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/4842476c434e375f9d3182ff7b89059583aa8b27",
+            "reference": "4842476c434e375f9d3182ff7b89059583aa8b27",
             "shasum": ""
         },
         "require": {
@@ -3042,7 +3108,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
         },
-        "time": "2018-06-06T23:58:19+00:00",
+        "time": "2018-02-20T21:35:23+00:00",
         "bin": [
             "bin/phpcs",
             "bin/phpcbf"
@@ -3210,17 +3276,17 @@
     },
     {
         "name": "symfony/debug",
-        "version": "v4.1.0",
-        "version_normalized": "4.1.0.0",
+        "version": "v4.0.11",
+        "version_normalized": "4.0.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/debug.git",
-            "reference": "449f8b00b28ab6e6912c3e6b920406143b27193b"
+            "reference": "4e7c98de67cc4171d4c986554e09a511da40f3d8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/debug/zipball/449f8b00b28ab6e6912c3e6b920406143b27193b",
-            "reference": "449f8b00b28ab6e6912c3e6b920406143b27193b",
+            "url": "https://api.github.com/repos/symfony/debug/zipball/4e7c98de67cc4171d4c986554e09a511da40f3d8",
+            "reference": "4e7c98de67cc4171d4c986554e09a511da40f3d8",
             "shasum": ""
         },
         "require": {
@@ -3233,11 +3299,11 @@
         "require-dev": {
             "symfony/http-kernel": "~3.4|~4.0"
         },
-        "time": "2018-05-16T14:33:22+00:00",
+        "time": "2018-05-16T09:05:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.0-dev"
             }
         },
         "installation-source": "dist",
@@ -3341,17 +3407,17 @@
     },
     {
         "name": "symfony/event-dispatcher",
-        "version": "v4.1.0",
-        "version_normalized": "4.1.0.0",
+        "version": "v4.0.11",
+        "version_normalized": "4.0.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/event-dispatcher.git",
-            "reference": "2391ed210a239868e7256eb6921b1bd83f3087b5"
+            "reference": "63353a71073faf08f62caab4e6889b06a787f07b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/2391ed210a239868e7256eb6921b1bd83f3087b5",
-            "reference": "2391ed210a239868e7256eb6921b1bd83f3087b5",
+            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/63353a71073faf08f62caab4e6889b06a787f07b",
+            "reference": "63353a71073faf08f62caab4e6889b06a787f07b",
             "shasum": ""
         },
         "require": {
@@ -3371,11 +3437,11 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2018-04-06T07:35:57+00:00",
+        "time": "2018-04-06T07:35:43+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.0-dev"
             }
         },
         "installation-source": "dist",
@@ -3406,28 +3472,28 @@
     },
     {
         "name": "symfony/filesystem",
-        "version": "v4.1.0",
-        "version_normalized": "4.1.0.0",
+        "version": "v4.0.11",
+        "version_normalized": "4.0.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/filesystem.git",
-            "reference": "562bf7005b55fd80d26b582d28e3e10f2dd5ae9c"
+            "reference": "7a69e728e9f0044958c2fd7d72bfe5e7bd1a4d04"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/filesystem/zipball/562bf7005b55fd80d26b582d28e3e10f2dd5ae9c",
-            "reference": "562bf7005b55fd80d26b582d28e3e10f2dd5ae9c",
+            "url": "https://api.github.com/repos/symfony/filesystem/zipball/7a69e728e9f0044958c2fd7d72bfe5e7bd1a4d04",
+            "reference": "7a69e728e9f0044958c2fd7d72bfe5e7bd1a4d04",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3",
             "symfony/polyfill-ctype": "~1.8"
         },
-        "time": "2018-05-30T07:26:09+00:00",
+        "time": "2018-05-16T09:05:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.0-dev"
             }
         },
         "installation-source": "dist",
@@ -3509,17 +3575,17 @@
     },
     {
         "name": "symfony/http-foundation",
-        "version": "v4.1.0",
-        "version_normalized": "4.1.0.0",
+        "version": "v4.0.11",
+        "version_normalized": "4.0.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/http-foundation.git",
-            "reference": "a916c88390fb861ee21f12a92b107d51bb68af99"
+            "reference": "277b757a2d3960170d99d372e171a8a18916467a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/a916c88390fb861ee21f12a92b107d51bb68af99",
-            "reference": "a916c88390fb861ee21f12a92b107d51bb68af99",
+            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/277b757a2d3960170d99d372e171a8a18916467a",
+            "reference": "277b757a2d3960170d99d372e171a8a18916467a",
             "shasum": ""
         },
         "require": {
@@ -3527,14 +3593,13 @@
             "symfony/polyfill-mbstring": "~1.1"
         },
         "require-dev": {
-            "predis/predis": "~1.0",
             "symfony/expression-language": "~3.4|~4.0"
         },
-        "time": "2018-05-25T14:55:38+00:00",
+        "time": "2018-05-25T11:08:56+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.0-dev"
             }
         },
         "installation-source": "dist",

@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3e71e8e-4053-4598-b52f-6d484d80597c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/App.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/controllers/CronController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/views/layouts/body.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/views/layouts/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/views/layouts/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/src/models/Article.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/src/models/Database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/src/models/Parser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/src/models/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/src/models/PostRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Compiler/Compiler.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Compiler/Compiler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Compiler/Parser.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Compiler/Parser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Compiler/PhpWriter.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Compiler/PhpWriter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Engine.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Engine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Macros/BlockMacros.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Macros/BlockMacros.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Macros/CoreMacros.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Macros/CoreMacros.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Macros/MacroSet.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Macros/MacroSet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Runtime/SnippetDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/latte/latte/src/Latte/Runtime/SnippetDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/myclabs/deep-copy/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/myclabs/deep-copy/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/myclabs/deep-copy/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/myclabs/deep-copy/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/UPGRADE-4.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/UPGRADE-4.0.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/doc/2_Usage_of_basic_components.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/doc/2_Usage_of_basic_components.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/grammar/php7.y" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/grammar/php7.y" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/BuilderFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/BuilderFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/Error.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/Error.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/Node/Param.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/Node/Param.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/Parser/Php7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/ParserAbstract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/test/PhpParser/NodeVisitor/FirstFindingVisitorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/test/PhpParser/NodeVisitor/FirstFindingVisitorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/test/PhpParser/PrettyPrinterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/test/PhpParser/PrettyPrinterTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/test/code/parser/errorHandling/recovery.test" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/nikic/php-parser/test/code/parser/errorHandling/recovery.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/simple-html-dom/simple-html-dom/simple_html_dom.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/simple-html-dom/simple-html-dom/simple_html_dom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/phpcs.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/phpcs.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/scripts/build-phar.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/scripts/build-phar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Files/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Files/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Files/FileList.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Files/FileList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Files/LocalFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Files/LocalFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Filters/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Filters/Filter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Generators/Generator.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Generators/Generator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Reporter.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Reporter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Reports/Diff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Reports/Diff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Reports/Json.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Reports/Json.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Ruleset.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Ruleset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Runner.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Runner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Sniffs/AbstractArraySniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Sniffs/AbstractArraySniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Sniffs/AbstractPatternSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Sniffs/AbstractPatternSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Sniffs/AbstractScopeSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Sniffs/AbstractScopeSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Sniffs/AbstractVariableSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Sniffs/AbstractVariableSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Docs/Commenting/FixmeStandard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Docs/Commenting/FixmeStandard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Docs/PHP/LowerCaseConstantStandard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Docs/PHP/LowerCaseConstantStandard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Docs/PHP/LowerCaseTypeStandard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Docs/PHP/UpperCaseConstantStandard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Docs/PHP/UpperCaseConstantStandard.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Docs/WhiteSpace/ArbitraryParenthesesSpacingStandard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Arrays/ArrayIndentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Arrays/ArrayIndentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/CodeAnalysis/AssignmentInConditionSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/CodeAnalysis/AssignmentInConditionSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Commenting/DocCommentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Commenting/DocCommentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/ControlStructures/InlineControlStructureSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/ControlStructures/InlineControlStructureSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Formatting/MultipleStatementAlignmentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Formatting/MultipleStatementAlignmentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Formatting/SpaceAfterNotSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Formatting/SpaceAfterNotSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Functions/OpeningFunctionBraceBsdAllmanSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Functions/OpeningFunctionBraceBsdAllmanSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Functions/OpeningFunctionBraceKernighanRitchieSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Functions/OpeningFunctionBraceKernighanRitchieSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Metrics/CyclomaticComplexitySniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/Metrics/CyclomaticComplexitySniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/PHP/DisallowAlternativePHPTagsSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/PHP/DisallowAlternativePHPTagsSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/PHP/LowerCaseKeywordSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/PHP/LowerCaseKeywordSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/PHP/LowerCaseTypeSniff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/WhiteSpace/ArbitraryParenthesesSpacingSniff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/WhiteSpace/LanguageConstructSpacingSniff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/WhiteSpace/ScopeIndentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Sniffs/WhiteSpace/ScopeIndentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Arrays/ArrayIndentUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Arrays/ArrayIndentUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Arrays/ArrayIndentUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Arrays/ArrayIndentUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Arrays/ArrayIndentUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Arrays/ArrayIndentUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Commenting/DocCommentUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Commenting/DocCommentUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Commenting/DocCommentUnitTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Commenting/DocCommentUnitTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Commenting/DocCommentUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Commenting/DocCommentUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/ControlStructures/InlineControlStructureUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/ControlStructures/InlineControlStructureUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/ControlStructures/InlineControlStructureUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/ControlStructures/InlineControlStructureUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/ControlStructures/InlineControlStructureUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/ControlStructures/InlineControlStructureUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Files/OneTraitPerFileUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Files/OneTraitPerFileUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Formatting/MultipleStatementAlignmentUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Formatting/MultipleStatementAlignmentUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Formatting/MultipleStatementAlignmentUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Formatting/MultipleStatementAlignmentUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Formatting/MultipleStatementAlignmentUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Formatting/MultipleStatementAlignmentUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceBsdAllmanUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceBsdAllmanUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceBsdAllmanUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceBsdAllmanUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceBsdAllmanUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceBsdAllmanUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceKernighanRitchieUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceKernighanRitchieUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceKernighanRitchieUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceKernighanRitchieUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceKernighanRitchieUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/Functions/OpeningFunctionBraceKernighanRitchieUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/PHP/DisallowShortOpenTagUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/PHP/DisallowShortOpenTagUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/PHP/LowerCaseKeywordUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/PHP/LowerCaseKeywordUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/PHP/LowerCaseKeywordUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/PHP/LowerCaseKeywordUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/PHP/LowerCaseTypeUnitTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/PHP/LowerCaseTypeUnitTest.inc.fixed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/PHP/LowerCaseTypeUnitTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ArbitraryParenthesesSpacingUnitTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ArbitraryParenthesesSpacingUnitTest.inc.fixed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ArbitraryParenthesesSpacingUnitTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/LanguageConstructSpacingUnitTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/LanguageConstructSpacingUnitTest.inc.fixed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/LanguageConstructSpacingUnitTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.1.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.1.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.1.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.1.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.2.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.2.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.2.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.2.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Generic/Tests/WhiteSpace/ScopeIndentUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/Commenting/ClassCommentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/Commenting/ClassCommentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/Commenting/FunctionCommentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/Commenting/FunctionCommentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/Functions/ValidDefaultValueSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/Functions/ValidDefaultValueSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/NamingConventions/ValidFunctionNameSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/NamingConventions/ValidFunctionNameSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/WhiteSpace/ObjectOperatorIndentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Sniffs/WhiteSpace/ObjectOperatorIndentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/Functions/FunctionDeclarationUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/Functions/FunctionDeclarationUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/Functions/FunctionDeclarationUnitTest.js.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/Functions/FunctionDeclarationUnitTest.js.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/NamingConventions/ValidFunctionNameUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/NamingConventions/ValidFunctionNameUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/NamingConventions/ValidFunctionNameUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/NamingConventions/ValidFunctionNameUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/WhiteSpace/ObjectOperatorIndentUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/WhiteSpace/ObjectOperatorIndentUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/WhiteSpace/ObjectOperatorIndentUnitTest.inc.fixed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/WhiteSpace/ObjectOperatorIndentUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PEAR/Tests/WhiteSpace/ObjectOperatorIndentUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR1/Sniffs/Files/SideEffectsSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR1/Sniffs/Files/SideEffectsSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR1/Tests/Classes/ClassDeclarationUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR1/Tests/Classes/ClassDeclarationUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR1/Tests/Files/SideEffectsUnitTest.12.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR1/Tests/Files/SideEffectsUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR1/Tests/Files/SideEffectsUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR1/ruleset.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR1/ruleset.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Docs/Classes/ClassInstantiationStandard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Docs/Keywords/ShortFormTypeKeywordsStandard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Docs/Namespaces/CompoundNamespaceDepthStandard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Docs/Operators/OperatorSpacingStandard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Sniffs/Classes/ClassInstantiationSniff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Sniffs/Keywords/ShortFormTypeKeywordsSniff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Sniffs/Namespaces/CompoundNamespaceDepthSniff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Sniffs/Operators/OperatorSpacingSniff.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Classes/ClassInstantiationUnitTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Classes/ClassInstantiationUnitTest.inc.fixed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Classes/ClassInstantiationUnitTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Keywords/ShortFormTypeKeywordsUnitTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Keywords/ShortFormTypeKeywordsUnitTest.inc.fixed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Keywords/ShortFormTypeKeywordsUnitTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Namespaces/CompoundNamespaceDepthUnitTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Namespaces/CompoundNamespaceDepthUnitTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Operators/OperatorSpacingUnitTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Operators/OperatorSpacingUnitTest.inc.fixed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/Tests/Operators/OperatorSpacingUnitTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR12/ruleset.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR2/Sniffs/Namespaces/UseDeclarationSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR2/Sniffs/Namespaces/UseDeclarationSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR2/Tests/Namespaces/UseDeclarationUnitTest.15.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR2/Tests/Namespaces/UseDeclarationUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR2/Tests/Namespaces/UseDeclarationUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR2/ruleset.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/PSR2/ruleset.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Arrays/ArrayBracketSpacingSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Arrays/ArrayBracketSpacingSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Arrays/ArrayDeclarationSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Arrays/ArrayDeclarationSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/CSS/ClassDefinitionClosingBraceSpaceSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/CSS/ClassDefinitionClosingBraceSpaceSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Commenting/BlockCommentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Commenting/BlockCommentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Commenting/FileCommentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Commenting/FileCommentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Commenting/FunctionCommentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Commenting/FunctionCommentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Commenting/InlineCommentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Commenting/InlineCommentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/ControlStructures/ControlSignatureSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/ControlStructures/ControlSignatureSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Debug/JavaScriptLintSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Debug/JavaScriptLintSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Formatting/OperatorBracketSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Formatting/OperatorBracketSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Functions/FunctionDeclarationArgumentSpacingSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Functions/FunctionDeclarationArgumentSpacingSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Functions/MultiLineFunctionDeclarationSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Functions/MultiLineFunctionDeclarationSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/NamingConventions/ValidVariableNameSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/NamingConventions/ValidVariableNameSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Operators/ComparisonOperatorUsageSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Operators/ComparisonOperatorUsageSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/PHP/CommentedOutCodeSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/PHP/CommentedOutCodeSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/PHP/DisallowComparisonAssignmentSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/PHP/DisallowComparisonAssignmentSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/PHP/DisallowMultipleAssignmentsSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/PHP/DisallowMultipleAssignmentsSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Scope/MemberVarScopeSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/Scope/MemberVarScopeSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/ControlStructureSpacingSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/ControlStructureSpacingSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/FunctionClosingBraceSpaceSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/FunctionClosingBraceSpaceSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/FunctionSpacingSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/FunctionSpacingSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/LanguageConstructSpacingSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/LanguageConstructSpacingSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/MemberVarSpacingSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/MemberVarSpacingSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/OperatorSpacingSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/OperatorSpacingSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/ScopeKeywordSpacingSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/ScopeKeywordSpacingSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/SuperfluousWhitespaceSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Sniffs/WhiteSpace/SuperfluousWhitespaceSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.1.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.1.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.1.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.1.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.2.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.2.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.2.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.2.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Arrays/ArrayDeclarationUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Commenting/BlockCommentUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Commenting/BlockCommentUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Commenting/BlockCommentUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Commenting/BlockCommentUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Commenting/BlockCommentUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Commenting/BlockCommentUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/ControlStructures/ControlSignatureUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/ControlStructures/ControlSignatureUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/ControlStructures/ControlSignatureUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/ControlStructures/ControlSignatureUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/ControlStructures/ControlSignatureUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/ControlStructures/ControlSignatureUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Debug/JSLintUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Debug/JSLintUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Debug/JavaScriptLintUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Debug/JavaScriptLintUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Formatting/OperatorBracketUnitTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Formatting/OperatorBracketUnitTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Formatting/OperatorBracketUnitTest.js.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Formatting/OperatorBracketUnitTest.js.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/FunctionDeclarationArgumentSpacingUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/FunctionDeclarationArgumentSpacingUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/FunctionDeclarationArgumentSpacingUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/FunctionDeclarationArgumentSpacingUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/FunctionDeclarationArgumentSpacingUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/FunctionDeclarationArgumentSpacingUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/MultiLineFunctionDeclarationUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/MultiLineFunctionDeclarationUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/MultiLineFunctionDeclarationUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/MultiLineFunctionDeclarationUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/MultiLineFunctionDeclarationUnitTest.js.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Functions/MultiLineFunctionDeclarationUnitTest.js.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/NamingConventions/ValidVariableNameUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/NamingConventions/ValidVariableNameUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/NamingConventions/ValidVariableNameUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/NamingConventions/ValidVariableNameUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Operators/ComparisonOperatorUsageUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Operators/ComparisonOperatorUsageUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Operators/ComparisonOperatorUsageUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Operators/ComparisonOperatorUsageUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/CommentedOutCodeUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/CommentedOutCodeUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/CommentedOutCodeUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/CommentedOutCodeUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/DisallowComparisonAssignmentUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/DisallowComparisonAssignmentUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/DisallowMultipleAssignmentsUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/DisallowMultipleAssignmentsUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/DisallowMultipleAssignmentsUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/PHP/DisallowMultipleAssignmentsUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Scope/MemberVarScopeUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Scope/MemberVarScopeUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Scope/MemberVarScopeUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/Scope/MemberVarScopeUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/FunctionSpacingUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/FunctionSpacingUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/FunctionSpacingUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/FunctionSpacingUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/FunctionSpacingUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/FunctionSpacingUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/MemberVarSpacingUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/MemberVarSpacingUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/MemberVarSpacingUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/MemberVarSpacingUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/MemberVarSpacingUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/MemberVarSpacingUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/ScopeKeywordSpacingUnitTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/ScopeKeywordSpacingUnitTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/ScopeKeywordSpacingUnitTest.inc.fixed" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/ScopeKeywordSpacingUnitTest.inc.fixed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/ScopeKeywordSpacingUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/ScopeKeywordSpacingUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/SuperfluousWhitespaceUnitTest.1.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/SuperfluousWhitespaceUnitTest.1.inc.fixed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/SuperfluousWhitespaceUnitTest.2.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/SuperfluousWhitespaceUnitTest.2.inc.fixed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/SuperfluousWhitespaceUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/Tests/WhiteSpace/SuperfluousWhitespaceUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/ruleset.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Squiz/ruleset.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Zend/Sniffs/Debug/CodeAnalyzerSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Zend/Sniffs/Debug/CodeAnalyzerSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Zend/Sniffs/NamingConventions/ValidVariableNameSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Zend/Sniffs/NamingConventions/ValidVariableNameSniff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Zend/Tests/Debug/CodeAnalyzerUnitTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Standards/Zend/Tests/Debug/CodeAnalyzerUnitTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Tokenizers/JS.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Tokenizers/JS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Tokenizers/PHP.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Tokenizers/PHP.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Tokenizers/Tokenizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Tokenizers/Tokenizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Util/Cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Util/Cache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Util/Common.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Util/Common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Util/Standards.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Util/Standards.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/src/Util/Tokens.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/AllTests.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/AllTests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/AllTests.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/AllTests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/ErrorSuppressionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/ErrorSuppressionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/FindEndOfStatementTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/FindEndOfStatementTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/FindExtendedClassNameTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/FindExtendedClassNameTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/GetMemberPropertiesTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/GetMemberPropertiesTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/GetMethodParametersTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/GetMethodParametersTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/GetMethodParametersTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/GetMethodParametersTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/GetMethodPropertiesTest.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/GetMethodPropertiesTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/IsReferenceTest.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Core/File/IsReferenceTest.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Standards/AllSniffs.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/squizlabs/php_codesniffer/tests/Standards/AllSniffs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/debug/Exception/FatalThrowableError.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/debug/Exception/FatalThrowableError.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/debug/Exception/FlattenException.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/debug/Exception/FlattenException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/debug/Tests/Exception/FlattenExceptionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/debug/Tests/Exception/FlattenExceptionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/debug/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/debug/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcherInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/Debug/TraceableEventDispatcherInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/DependencyInjection/RegisterListenersPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/Tests/Debug/TraceableEventDispatcherTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/Tests/Debug/TraceableEventDispatcherTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/Tests/DependencyInjection/RegisterListenersPassTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/Tests/DependencyInjection/RegisterListenersPassTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/event-dispatcher/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/filesystem/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/filesystem/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/AcceptHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/AcceptHeader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/AcceptHeaderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/AcceptHeaderItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/BinaryFileResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/BinaryFileResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Cookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/File/Exception/CannotWriteFileException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/File/Exception/ExtensionFileException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/File/Exception/FormSizeFileException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/File/Exception/IniSizeFileException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/File/Exception/NoFileException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/File/Exception/NoTmpDirFileException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/File/Exception/PartialFileException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/File/UploadedFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/File/UploadedFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/FileBag.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/FileBag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/HeaderBag.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/HeaderBag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/HeaderUtils.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/ResponseHeaderBag.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/ResponseHeaderBag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Session/Storage/Handler/MigratingSessionHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Session/Storage/Handler/RedisSessionHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/AcceptHeaderItemTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/AcceptHeaderItemTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/AcceptHeaderTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/AcceptHeaderTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/BinaryFileResponseTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/CookieTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/CookieTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/File/UploadedFileTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/File/UploadedFileTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/FileBagTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/FileBagTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/common.inc" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/Fixtures/response-functional/common.inc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/HeaderUtilsTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/RequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/RequestTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/ResponseHeaderBagTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/ResponseHeaderBagTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/AbstractRedisSessionHandlerTestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/MigratingSessionHandlerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisClusterSessionHandlerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/PredisSessionHandlerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/RedisArraySessionHandlerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/Tests/Session/Storage/Handler/RedisSessionHandlerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/vendor/symfony/http-foundation/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/public/index.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AbstractParseProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/src/Models/AbstractParseProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostManager.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/app/src/Models/PostManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+              <folding>
+                <element signature="e#81#117#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimerDataProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/src/Models/TimerDataProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1350">
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Project/app/include/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4">
+              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$val</find>
+      <find>update</find>
+      <find>create</find>
+      <find>getsql</find>
+      <find>getSQL</find>
+      <find>paramTypes</find>
+      <find>-&gt;connection</find>
+      <find>executeQuer</find>
+      <find>-&gt;paramTypes</find>
+      <find>type</find>
+      <find>-&gt;Type</find>
+      <find>executeQue</find>
+      <find>execute</find>
+      <find>-&gt;conne</find>
+      <find>$query</find>
+      <find>execute</find>
+      <find>compileProviders</find>
+      <find>getProviders</find>
+      <find>compiledProviders</find>
+      <find>$segodnyapost</find>
+      <find>findPosts</find>
+      <find>setParameter</find>
+      <find>$feed</find>
+      <find>getTitle</find>
+      <find>providers</find>
+      <find>$params</find>
+      <find>dbParams</find>
+      <find>data</find>
+      <find>$time</find>
+      <find>/app</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/web/app/vendor/doctrine/dbal/lib/Doctrine/DBAL</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/etc/nginx/default.template.conf" />
+        <option value="$PROJECT_DIR$/etc/php/php.ini" />
+        <option value="$PROJECT_DIR$/App/controllers/Controller.php" />
+        <option value="$PROJECT_DIR$/App/App.php" />
+        <option value="$PROJECT_DIR$/web/app/src/Foo.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/web/app/src/models/test.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/web/app/src/models/Post.php" />
+        <option value="$PROJECT_DIR$/web/app/src/models/Parser.php" />
+        <option value="$PROJECT_DIR$/web/app/src/models/Database.php" />
+        <option value="$PROJECT_DIR$/web/app/src/models/Article.php" />
+        <option value="$PROJECT_DIR$/web/app/composer.json" />
+        <option value="$PROJECT_DIR$/web/app/src/models/PostRepository.php" />
+        <option value="$PROJECT_DIR$/web/App/Src/Models/DB.php" />
+        <option value="$PROJECT_DIR$/web/App/Src/Models/Parser.php" />
+        <option value="$PROJECT_DIR$/web/App/Src/Models/Post.php" />
+        <option value="$PROJECT_DIR$/web/App/Src/Models/PostRepository.php" />
+        <option value="$PROJECT_DIR$/web/App/Src/Models/Article.php" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/web/App/composer.json" />
+        <option value="$PROJECT_DIR$/Models/Post.php" />
+        <option value="$PROJECT_DIR$/Models/test.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/Parser.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/Article.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/PostRepository.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/DataProviderInterface.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/AbstractDataProvider.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/DB.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/AbstractParseProvider.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/PostManager.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/Post.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/SegodnyaDataProvider.php" />
+        <option value="$PROJECT_DIR$/web/App/src/Models/TimerDataProvider.php" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/web/index.php" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/web/app/src/Models/SegodnyaDataProvider.php" />
+        <option value="$PROJECT_DIR$/web/app/src/Models/Post.php" />
+        <option value="$PROJECT_DIR$/web/app/src/Models/DB.php" />
+        <option value="$PROJECT_DIR$/web/app/src/Models/DataProviderInterface.php" />
+        <option value="$PROJECT_DIR$/web/public/layouts/body.php" />
+        <option value="$PROJECT_DIR$/web/public/layouts/header.php" />
+        <option value="$PROJECT_DIR$/web/public/css/style.scss" />
+        <option value="$PROJECT_DIR$/web/public/layouts/footer.php" />
+        <option value="$PROJECT_DIR$/../Project/app/header.php" />
+        <option value="$PROJECT_DIR$/web/app/src/Models/TimerDataProvider.php" />
+        <option value="$PROJECT_DIR$/web/public/index.php" />
+        <option value="$PROJECT_DIR$/web/app/src/Models/AbstractParseProvider.php" />
+        <option value="$PROJECT_DIR$/web/app/src/Models/PostManager.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="343" />
+    <option name="y" value="338" />
+    <option name="width" value="1272" />
+    <option name="height" value="716" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/catafrakt/Documents/Parser/web/App/composer.json" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Izyabot" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/public" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/app/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/App" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3e71e8e-4053-4598-b52f-6d484d80597c" name="Default" comment="" />
+      <created>1526902259807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526902259807</updated>
+      <workItem from="1526902261438" duration="20388000" />
+      <workItem from="1526984530185" duration="622000" />
+      <workItem from="1526996022846" duration="41663000" />
+      <workItem from="1527592393105" duration="774000" />
+      <workItem from="1527595756622" duration="9229000" />
+      <workItem from="1527680128761" duration="6501000" />
+      <workItem from="1527694609282" duration="6931000" />
+      <workItem from="1527764609310" duration="548000" />
+      <workItem from="1527765208806" duration="708000" />
+      <workItem from="1528039004801" duration="7827000" />
+      <workItem from="1528118594574" duration="35000" />
+      <workItem from="1528133222473" duration="2110000" />
+      <workItem from="1528203095211" duration="37688000" />
+      <workItem from="1528473611691" duration="4969000" />
+      <workItem from="1528716104291" duration="16892000" />
+      <workItem from="1528813371063" duration="2234000" />
+      <workItem from="1528818263556" duration="68042000" />
+      <workItem from="1529139394818" duration="9856000" />
+      <workItem from="1529222178046" duration="27563000" />
+      <workItem from="1529321172891" duration="3866000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="268446000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010672" side_tool="true" weight="0.3449367" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49893278" weight="0.35443038" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16221985" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.32947367" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32977587" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32977587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.32947367" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32977587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16221985" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32977587" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49893278" weight="0.35443038" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010672" side_tool="true" weight="0.3449367" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="29" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Models/Post.php" />
+    <entry file="file://$PROJECT_DIR$/Models/DataProviderInterface.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/Parser.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/Article.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/PostRepository.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/AbstractDataProvider.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/vendor/simple-html-dom/simple-html-dom/simple_html_dom.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/DB.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/DataProviderInterface.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/AbstractParseProvider.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/vendor/doctrine/dbal/lib/Doctrine/DBAL/Query/QueryBuilder.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/PostManager.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/Post.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/SegodnyaDataProvider.php" />
+    <entry file="file://$PROJECT_DIR$/web/App/src/Models/TimerDataProvider.php" />
+    <entry file="phar://$PROJECT_DIR$/web/App/composer.phar/bin/composer" />
+    <entry file="file://$PROJECT_DIR$/web/App/composer.json" />
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-606">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/php/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/nginx/default.template.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/Models/Article.php" />
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/composer.json.dist">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="41" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="21" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/test/FooTest.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/report/phpunit/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1188" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/Models/SegodnyaDataProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/Models/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Project/app/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Project/app/body.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/layouts/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/layouts/body.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="11" selection-start-line="5" selection-start-column="6" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Project/app/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/Models/DataProviderInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Project/app/include/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Query/QueryBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="1325" column="48" selection-start-line="1325" selection-start-column="48" selection-end-line="1325" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/Models/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="1062" column="20" selection-start-line="1062" selection-start-column="20" selection-end-line="1062" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/Models/AbstractParseProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/Models/TimerDataProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350">
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/src/Models/PostManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="e#81#117#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
